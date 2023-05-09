@@ -1,1 +1,1 @@
-# metro-config
+core/README.md
