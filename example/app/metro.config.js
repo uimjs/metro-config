@@ -1,2 +1,2 @@
-const conf = require('@uim/metro-config');
+const conf = require('@uimjs/metro-config');
 module.exports = conf.default();

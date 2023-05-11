@@ -1,12 +1,12 @@
 Metro Config
 ===
 
-React Native build tool configuration is used to add default settings to differentiate error issues caused by `link` packages in business development. The project uses yarn `workspaces` to manage multiple interdependent projects, which causes dependencies to be installed in the root `node_modules` dependency directory, resulting in missing dependency packages in the child project's `node_modules` and causing errors. By using the `@uim/metro-config` plugin and configuring the `.pkgresolverc.json` file, we can specify the original directory of the package to solve this problem.
+React Native build tool configuration is used to add default settings to differentiate error issues caused by `link` packages in business development. The project uses yarn `workspaces` to manage multiple interdependent projects, which causes dependencies to be installed in the root `node_modules` dependency directory, resulting in missing dependency packages in the child project's `node_modules` and causing errors. By using the `@uimjs/metro-config` plugin and configuring the `.pkgresolverc.json` file, we can specify the original directory of the package to solve this problem.
 
 ## Install
 
 ```bash
-$ npm i @uim/metro-config
+$ npm i @uimjs/metro-config
 ```
 
 ## ❶ Modify the default configuration [`app/metro.config.js`](https://github.com/uimjs/metro-config/blob/c5ab14e8ec3b7b889a8fcd6930f3ad5c677035fc/example/app/metro.config.js#L1-L2)
@@ -24,7 +24,7 @@ The default configuration has been encapsulated to handle package dependency iss
 -     }),
 -   },
 - };
-+ const conf = require('@uim/metro-config');
++ const conf = require('@uimjs/metro-config');
 + module.exports = conf.default();
 ```
 
@@ -33,7 +33,7 @@ The default configuration has been encapsulated to handle package dependency iss
 ```js
 {
   // The package is used for react-native business content
-  "@uim/react-native-app-shared": "../shared/src/main.js",
+  "@uimjs/react-native-app-shared": "../shared/src/main.js",
 }
 ```
 
@@ -41,7 +41,7 @@ The default configuration has been encapsulated to handle package dependency iss
 
 ```js
 {
-  "@uim/react-native-webview": "../packages/webview/lib/index.js"
+  "@uimjs/react-native-webview": "../packages/webview/lib/index.js"
 }
 ```
 
@@ -50,7 +50,7 @@ The default configuration has been encapsulated to handle package dependency iss
 
 ```diff
 "devDependencies": {
-+  "@uim/metro-config": "1.0.0",
++  "@uimjs/metro-config": "1.0.0",
 }
 ```
 

@@ -68,12 +68,12 @@ jobs:
           name: ${{ steps.create_tag.outputs.version }}
           tag: ${{ steps.create_tag.outputs.version }}
           body: |
-            [![](https://img.shields.io/badge/Open%20in-unpkg-blue)](https://uiwjs.github.io/npm-unpkg/#/pkg/@uim/metro-config@${{steps.create_tag.outputs.versionNumber}}/file/README.md)
+            [![](https://img.shields.io/badge/Open%20in-unpkg-blue)](https://uiwjs.github.io/npm-unpkg/#/pkg/@uimjs/metro-config@${{steps.create_tag.outputs.versionNumber}}/file/README.md)
             
-            Documentation ${{ steps.changelog.outputs.tag }}: https://raw.githack.com/jaywcjlove/@uim/metro-config/${{ steps.changelog.outputs.gh-pages-short-hash }}/index.html  
+            Documentation ${{ steps.changelog.outputs.tag }}: https://raw.githack.com/jaywcjlove/@uimjs/metro-config/${{ steps.changelog.outputs.gh-pages-short-hash }}/index.html  
 
             ```bash
-            npm i @uim/metro-config@${{steps.create_tag.outputs.versionNumber}}
+            npm i @uimjs/metro-config@${{steps.create_tag.outputs.versionNumber}}
             ```
             ${{ steps.changelog.outputs.compareurl }}
             

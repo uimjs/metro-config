@@ -1,5 +1,5 @@
 {
-  "name": "@uim/metro-config",
+  "name": "@uimjs/metro-config",
   "version": "1.0.0",
   "description": "Metro Config",
   "main": "lib/main.js",

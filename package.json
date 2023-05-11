@@ -6,8 +6,8 @@
   "author": "jaywcjlove",
   "license": "MIT",
   "scripts": {
-    "build": "lerna exec --scope @uim/metro-config -- tsbb build src/*.tsx",
-    "start": "lerna exec --scope @uim/metro-config -- tsbb start src/*.tsx"
+    "build": "lerna exec --scope @uimjs/metro-config -- tsbb build src/*.tsx",
+    "start": "lerna exec --scope @uimjs/metro-config -- tsbb start src/*.tsx"
   },
   "repository": {
     "type": "git",
