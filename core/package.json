@@ -2,6 +2,11 @@
   "name": "@uimjs/metro-config",
   "version": "1.0.1",
   "description": "Metro Config",
+  "homepage": "https://uimjs.github.io/metro-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uimjs/metro-config.git"
+  },
   "main": "lib/main.js",
   "keywords": [
     "react-native",
