@@ -58,8 +58,8 @@ The default configuration has been encapsulated to handle package dependency iss
 
 As always, thanks to our amazing contributors!
 
-<a href="https://github.com/jaywcjlove/typenexus/graphs/contributors">
-  <img src="https://jaywcjlove.github.io/typenexus/CONTRIBUTORS.svg" />
+<a href="https://github.com/uimjs/metro-config/graphs/contributors">
+  <img src="https://uimjs.github.io/metro-config/CONTRIBUTORS.svg" />
 </a>
 
 Made with [contributors](https://github.com/jaywcjlove/github-action-contributors).
