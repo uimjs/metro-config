@@ -22,6 +22,13 @@ jobs:
       - run: idoc -s "Metro Config {{version}}"
         working-directory: core
 
+      - name: Generate Contributors Images
+        uses: jaywcjlove/github-action-contributors@main
+        with:
+          filter-author: (renovate\[bot\]|renovate-bot|dependabot\[bot\])
+          output: core/dist/CONTRIBUTORS.svg
+          avatarSize: 42
+
       - name: Is a tag created auto?
         id: create_tag
         uses: jaywcjlove/create-tag-action@main
