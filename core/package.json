@@ -1,12 +1,8 @@
 {
   "name": "@uim/metro-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "Metro Config",
   "main": "lib/main.js",
-  "scripts": {
-    "start": "tsbb start src/*.tsx",
-    "build": "tsbb build src/*.tsx"
-  },
   "keywords": [],
   "dependencies": {
     "cosmiconfig": "^8.1.3",
