@@ -18,7 +18,7 @@ jobs:
       - run: npm run build
       - run: tree -I 'node_modules|.git|.github|src' -L 3 -a
 
-      - run: npm install idoc@1.25.2 -g
+      - run: npm install idoc@1.25.3 -g
       - run: idoc -s "Metro Config {{version}}"
         working-directory: core
 
