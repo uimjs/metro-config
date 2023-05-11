@@ -1,6 +1,9 @@
 Metro Config
 ===
 
+[![NPM version](https://img.shields.io/npm/v/@uimjs/metro-config.svg?style=flat)](https://npmjs.org/package/@uimjs/metro-config)
+[![CI](https://github.com/uimjs/metro-config/actions/workflows/ci.yml/badge.svg)](https://github.com/uimjs/metro-config/actions/workflows/ci.yml)
+
 React Native build tool configuration is used to add default settings to differentiate error issues caused by `link` packages in business development. The project uses yarn `workspaces` to manage multiple interdependent projects, which causes dependencies to be installed in the root `node_modules` dependency directory, resulting in missing dependency packages in the child project's `node_modules` and causing errors. By using the `@uimjs/metro-config` plugin and configuring the `.pkgresolverc.json` file, we can specify the original directory of the package to solve this problem.
 
 ## Install
@@ -41,7 +44,7 @@ The default configuration has been encapsulated to handle package dependency iss
 
 ```js
 {
-  "@uimjs/react-native-webview": "../packages/webview/lib/index.js"
+  "app-shared": "../packages/webview/lib/index.js"
 }
 ```
 
