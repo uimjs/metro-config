@@ -6,6 +6,7 @@
   "author": "jaywcjlove",
   "license": "MIT",
   "scripts": {
+    "version": "lerna version --force-publish=* --no-changelog --no-git-tag-version --no-push",
     "build": "lerna exec --scope @uimjs/metro-config -- tsbb build src/*.tsx",
     "start": "lerna exec --scope @uimjs/metro-config -- tsbb start src/*.tsx"
   },
