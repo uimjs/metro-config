@@ -53,3 +53,17 @@ The default configuration has been encapsulated to handle package dependency iss
 +  "@uim/metro-config": "1.0.0",
 }
 ```
+
+## Contributors
+
+As always, thanks to our amazing contributors!
+
+<a href="https://github.com/jaywcjlove/typenexus/graphs/contributors">
+  <img src="https://jaywcjlove.github.io/typenexus/CONTRIBUTORS.svg" />
+</a>
+
+Made with [contributors](https://github.com/jaywcjlove/github-action-contributors).
+
+## License
+
+This package is licensed under the MIT License.
