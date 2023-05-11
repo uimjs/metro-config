@@ -9,7 +9,7 @@ React Native build tool configuration is used to add default settings to differe
 $ npm i @uim/metro-config
 ```
 
-## ❶ Modify the default configuration `app/metro.config.js`
+## ❶ Modify the default configuration [`app/metro.config.js`](https://github.com/uimjs/metro-config/blob/c5ab14e8ec3b7b889a8fcd6930f3ad5c677035fc/example/app/metro.config.js#L1-L2)
 
 The default configuration has been encapsulated to handle package dependency issues.
 
@@ -28,7 +28,7 @@ The default configuration has been encapsulated to handle package dependency iss
 + module.exports = conf.default();
 ```
 
-## ❷ Add configuration `app/.pkgresolverc.json`
+## ❷ Add configuration [`app/.pkgresolverc.json`](https://github.com/uimjs/metro-config/blob/c5ab14e8ec3b7b889a8fcd6930f3ad5c677035fc/example/app/.pkgresolverc.json#L1-L3)
 
 ```js
 {
@@ -45,7 +45,7 @@ The default configuration has been encapsulated to handle package dependency iss
 }
 ```
 
-## ❸ Add dependencies `app/package.json`
+## ❸ Add dependencies [`app/package.json`](https://github.com/uimjs/metro-config/blob/c5ab14e8ec3b7b889a8fcd6930f3ad5c677035fc/example/app/package.json#L26)
 
 
 ```diff
@@ -53,6 +53,8 @@ The default configuration has been encapsulated to handle package dependency iss
 +  "@uim/metro-config": "1.0.0",
 }
 ```
+
+## ❹ Modify Entry [`index.js`](https://github.com/uimjs/metro-config/blob/c5ab14e8ec3b7b889a8fcd6930f3ad5c677035fc/example/app/index.js#L6-L7)
 
 ## Contributors
 
