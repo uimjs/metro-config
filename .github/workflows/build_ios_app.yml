@@ -1,0 +1,29 @@
+name: Build iOS
+on:
+  push:
+    branches:
+      - main
+
+env:
+  SKIP_PREFLIGHT_CHECK: true
+
+# https://github.com/uiwjs/react-native-uiw/issues/156
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.5
+          bundler-cache: true
+
+      - run: yarn install
+      - run: npm run build
+      - run: bundle install
+        working-directory: example/app/ios
+      - run: bundle exec pod install
+        working-directory: example/app/ios
