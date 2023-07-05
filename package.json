@@ -16,9 +16,9 @@
   },
   "keywords": [],
   "dependencies": {
-    "lerna": "~6.0.3",
-    "tsbb": "^4.1.5",
-    "typescript": "^5.0.4"
+    "lerna": "^7.1.1",
+    "tsbb": "^4.1.14",
+    "typescript": "4.8.4"
   },
   "workspaces": {
     "packages": [
