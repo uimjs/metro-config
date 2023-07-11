@@ -1,6 +1,6 @@
 {
   "name": "AwesomeProject",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "app-shared": "^2.0.0",
+    "app-shared": "^2.0.1",
     "react": "18.2.0",
     "react-native": "0.72.1"
   },
