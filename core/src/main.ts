@@ -12,7 +12,7 @@ export default function defaultConfig({...config}: Partial<MetroConfig> = {}): P
     Object.keys(cfg).forEach((key) => {
       const filepath = cfg[key];
       extraNodeModules[key] = path.resolve(process.cwd(), filepath);
-      if (/(.js)$/.test(filepath)) {
+      if (/.(jsx?|tsx?)$/.test(filepath)) {
         watchFolders.push(path.dirname(extraNodeModules[key]));
       }
     });
